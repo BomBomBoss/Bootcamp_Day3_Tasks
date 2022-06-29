@@ -21,7 +21,7 @@ public class BankAccount {
         balance = balance - amount;
     }
     void printBalance() {
-        System.out.println(balance);
+        System.out.println("Your balance is " + balance);
     }
     void transferFrom(BankAccount oldBankAccount, double amount) {
         if (oldBankAccount.balance < amount) {
@@ -42,6 +42,7 @@ public class BankAccount {
         ac2.transferFrom(ac1,6000);
         ac1.printBalance();
         ac2.printBalance();
+
     }
 
 
