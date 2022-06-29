@@ -14,7 +14,7 @@ public class BankAccount {
         balance = balance + amount;
     }
     void withdraw (double amount) {
-        if(amount>balance) {
+        if(amount>=balance) {
             System.out.println("There is not enough funds");
             return;
         }
