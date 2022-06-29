@@ -7,14 +7,6 @@ public class Main {
         int[] table2 = new int []{23,34,2,56};
         int [] copiedArray = copyArray(table2);
 
-        BankAccount ac1 = new BankAccount(4000);
-        ac1.deposit(5001);
-        ac1.withdraw(4500);
-
-        BankAccount ac2 = new BankAccount(200);
-        ac2.transferFrom(ac1,6000);
-        ac1.printBalance();
-        ac2.printBalance();
     }
 
     public static int[][] multiplicationTable() {
