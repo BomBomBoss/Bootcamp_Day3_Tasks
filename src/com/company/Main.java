@@ -14,6 +14,7 @@ public class Main {
         for (int i = 0; i<table[0].length; i++) {
             for (int j = 0; j<table.length; ++j) {
                 table[i][j] = (i +1) * (j+1);
+                System.out.println(i+1 + " * " + (j + 1) + " = " + table[i][j]);
             }
         } return table;
     }
