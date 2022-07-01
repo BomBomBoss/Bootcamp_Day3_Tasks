@@ -7,18 +7,18 @@ public class BankAccount {
     public BankAccount(double balance) {
         this.balance = balance;
     }
-    void deposit(double amount) {
+     double deposit(double amount) {
         if(amount > 5000) {
             System.out.println("Transaction canceled. Max deposit - 5000 | Your deposit: " + amount);
-            return;}
-        balance = balance + amount;
+            return balance;}
+       return balance = balance + amount;
     }
-    void withdraw (double amount) {
+    double withdraw (double amount) {
         if(amount>=balance) {
             System.out.println("There is not enough funds");
-            return;
+            return balance;
         }
-        balance = balance - amount;
+        return balance = balance - amount;
     }
     void printBalance() {
         System.out.println("Your balance is " + balance);
